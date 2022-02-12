@@ -1,9 +1,8 @@
 import socket
-import time
 
 
 sock = socket.socket()
-sock.connect(('127.0.0.1', 9090))
+sock.connect(('80.211.176.167', 9090))
 while True:
     a = bytes(input(), 'ascii')
     sock.send(a)
